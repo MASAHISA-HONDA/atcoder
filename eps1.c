@@ -1,8 +1,8 @@
 #include<stdio.h>
 
-void eps1(double *in,double *out,int size){
+void eps1(long double *in,long double *out,int size){
 	int i,j;
-	double e[size][size];
+	long double e[size][size];
 
 	e[0][0] = *(in + 0);
 	e[0][1] = *(in + 1);
@@ -20,6 +20,6 @@ void eps1(double *in,double *out,int size){
 	}
 	for(j=0;j<size;j++){
 		*(out+j) = e[j][0];
-		printf("e[%d][0] = %f\n",j,*(out+j));
+		printf("e[%d][0] = %Lf\n",j,*(out+j));
 	}
 }
