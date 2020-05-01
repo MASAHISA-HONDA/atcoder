@@ -25,5 +25,7 @@ int main(){
 
 	eps1(&a[0],&out[0],N);
 	printf("ans = %39.38Lf\n",out[N-2]);
+	printf("ans = %39.38f\n",M_PI);
+	printf("ans = %39.38Lf\n",M_PI - out[N-2]);
 
 }
